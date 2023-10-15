@@ -1,0 +1,187 @@
+
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>
+            About
+        </title>
+        <style>
+            img{
+                width:23px;
+            }
+            body{
+                margin:0;
+                font-family:sans-serif;
+                background:url() no-repeat center fixed;
+                background-size:cover;
+                color:#fff;
+                padding:2em;
+            }
+            body::before
+            {
+                content:' ';
+                background:rgba(0,0,0,0.7);
+                position: absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                z-index:-1;
+                position:fixed;
+            }
+            *
+            {
+                margin:0;
+                padding:0;
+
+            }
+            h1{
+              margin:0.3em;
+              font-size:3em;
+
+            }
+            h2{
+                margin-bottom:0.5em;
+            }
+            .title
+            {
+                text-align:center;
+            }
+            .title p{
+                color:#0d71fc;
+                font-size:1.3em;
+            }
+            .timeline
+            {
+                margin:5em auto;
+                max-width:34.15em;
+            }
+            .checkpoint
+            {
+                max-width:34em;
+                padding-top :2em;
+                padding-bottom:2em;
+                position:relative;
+            }
+            .checkpoint div{
+                border:2px solid #888;
+                border-radius:1em;
+                padding:1.5em;
+            }
+            .checkpoint:nth-child(odd)
+            {
+                border-left:3px solid #888;
+                padding-left:3em;
+            }
+            .checkpoint:nth-child(even)
+            {
+                border-right:3em;
+                transform:translatex(-17em);
+            }
+            .checkpoint:nth-child(odd)::before,
+            .checkpoint:nth-child(even)::before{
+                content:'';
+                background:#888;
+                width:3em;
+                top:50%;
+                transform:translatey(-50%);
+            }
+            .checkpoint:nth-child(odd)::before
+            {
+                left:0;
+            }
+            .checkpoint:nth-child(even)::before
+            {
+                right:0;
+            }
+            .checkpoint:nth-child(odd) div::before,
+            .checkpoint:nth-child(even) div::before
+            {
+                content:' ';
+                background:#fff;
+                box-shadow:0 0 0.5em #0d71fc;
+                width:0.8em;
+                height:0.8em;
+                position:absolute;
+                top:50%;
+                transform:translatey(-50%);
+                border-radius:50%;
+            }
+            .checkpoint:nth-child(odd) div::before
+            {
+                left:-0.5em;
+            }
+            /*
+            .timeline{
+                width:80vw;
+            }
+            .timeline .checkpoint{
+                width:100%;
+                transform:none;
+                padding-left:0;
+                padding-right:0;
+            }
+            .timeline .checkpoint{
+                width:100%;
+                transform:none;
+                padding-left:0;
+                padding-right:0;
+                border:none;
+            }
+            */
+
+        </style>
+    </head>
+    <body>
+         <div class="title">
+            <h1>Skills</h1>
+            <p>These are skills i have</p>
+         </div>
+         <div class="timeline">
+               <div class="checkpoint">
+                    <div>
+                     <h2>HTML<img src="html.png"></h2>
+                     <p>
+                        I have a knowledge on html elements,tags,forms,attributes,media elemnts like audio and video,comments  etc..
+                    <p>
+                    </div>
+               </div>
+                  <div class="checkpoint">
+                    <div>
+                       <h2>Javascript<img src="js.jpeg"></h2>
+                       <p>
+                          I have a knowledge on comments,variables,loops,conditional statements ,datatypes,functions,objects,strings,string methods,arrays etc..
+                      <p>
+                    </div>
+
+            </div>
+            <div class="checkpoint">
+                <div>
+                   <h2>PHP<img src="php.png"></h2>
+                   <p>
+                      I have a knowledge on variables,comments,constants,operators,lopps,conditional statements,functions,form validation,email validation,file upload,file download,connectivity to database  etc..
+                  <p>
+                </div>
+         </div>
+         <div class="checkpoint">
+            <div>
+               <h2>CSS<img src="css.png"></h2>
+               <p>
+                  I have a knowledge on css selectors,css font property,background,css colors,border properties etc..
+              <p>
+            </div>
+        </div>
+            <div class="checkpoint">
+                <div>
+                   <h2>Jquery<img src="jq.jpg"></h2>
+                   <p>
+                      I have a knowledge on jquery events,jquery selectors,jquery effects  etc..
+                  <p>
+                </div>
+            </div>
+    </div>
+    </body>
+</html>
