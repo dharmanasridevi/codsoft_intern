@@ -1,0 +1,147 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        #sri{
+            font-family: Arial, sans-serif;
+            background-color: rgb(240, 212, 212);
+        }
+       /* Header Styles */
+        header {
+            background-color:rgb(240, 139, 139);
+            color:#050505bd;
+            text-align: center;
+            padding: 20px;
+        }
+        /* Navigation Menu Styles */
+        nav {
+            display: flex;
+            width:100%;
+            justify-content: center;
+            margin-top: 20px;
+            background-color:rgb(240, 139, 139);
+        }  
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin: 0 40px;
+        }
+        /* Main Content Styles */
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffffcc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        /* Columns */
+        .column {
+            flex: 1;
+            padding: 20px;
+        }
+        /* Footer Styles */
+        footer {
+            background-color: rgb(219, 71, 71);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }  
+        .custom-button {
+    background-color: #742828; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+.custom-button:hover {
+    background-color: rgb(211, 133, 133); /* Change the background color on hover */
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Landing Page</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="#">Home</a>
+        &nbsp &nbsp
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="column">
+            <img src="up.jpeg" width=99%>
+        
+        </div>
+
+        <div class="column">
+            <table  bordercolor=gray >
+                <tr>
+                <td> <h2>About Us</h2><br><h5>Welcome to our Creative Digital Agency, where innovation, creativity, and digital expertise converge to craft compelling experiences that leave a lasting impact.We are a team of passionate and forward-thinking individuals dedicated to helping businesses thrive in the digital landscape.At our Creative Digital Agency, our mission is simple: to empower businesses to flourish in the digital age. We are driven by the belief that every brand, big or small, deserves an online presence that captivates and converts. We strive to bridge the gap between creativity and technology, turning visions into reality and challenges into opportunities.<h5>
+                   <br> <p><button class="custom-button">click here</button></p>
+                </td>
+                
+            
+                    <td> <img width=80% height=100% src="lp.jpeg" ></td>
+               
+                </tr>
+                </table>
+            
+            
+        </div>
+
+
+
+        <div class="column">
+            <div id="sri">
+            <h2>Our Services</h2>
+            <br><br>
+            
+                
+                    <table>
+                        <tr>
+                            <td>
+                                <img width=60% src="first.jpeg" >
+                                <br><br>
+                                <p><h3>User Experience</h3></p>
+                            </td>
+                            <td>
+                                <img width=60% src="two.jpeg" ><br><br>
+                                <p><h3>Creative Design</h3></p>
+
+                            </td>
+                            <td>
+                                <img width=60% src="ret.jpeg" >
+                                <br><br>
+                                <p><h3>Retina Design</h3></p>
+                            </td>
+
+                        </tr>
+                    </table>
+   
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Landing Page Example
+    </footer>
+</body>
+</html>
